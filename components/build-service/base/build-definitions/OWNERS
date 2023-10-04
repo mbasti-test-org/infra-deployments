@@ -1,0 +1,30 @@
+# See the OWNERS docs: https://go.k8s.io/owners
+
+approvers:
+- mmorhun
+- tkdchen
+- rcerven
+- mkosiarc
+- dirgim
+- hongweiliu17
+- jsztuka
+- jinqi7
+- sonam1412
+- MartinBasti
+- Josh-Everett
+- 14rcole
+
+reviewers:
+- mmorhun
+- tkdchen
+- rcerven
+- mkosiarc
+- dirgim
+- hongweiliu17
+- jsztuka
+- jinqi7
+- sonam1412
+- MartinBasti
+- Josh-Everett
+- 14rcole
+
