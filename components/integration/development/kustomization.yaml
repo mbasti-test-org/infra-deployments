@@ -1,15 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../base
-- https://github.com/redhat-appstudio/integration-service/config/default?ref=16e419239e99ae9c826be5735eba10e184f87019
-
+  - ../base
+  - https://github.com/redhat-appstudio/integration-service/config/default?ref=16e419239e99ae9c826be5735eba10e184f87019
 images:
-- name: quay.io/redhat-appstudio/integration-service
-  newName: quay.io/redhat-appstudio/integration-service
-  newTag: 16e419239e99ae9c826be5735eba10e184f87019
-
+  - name: quay.io/redhat-appstudio/integration-service
+    newName: quay.io/martinbasti/stonesoup
+    newTag: integration-service-38
 namespace: integration-service
-
 components:
   - ../k-components/manager-resources-patch
