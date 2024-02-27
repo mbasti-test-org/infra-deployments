@@ -7,7 +7,10 @@ patches:
       name: controller-manager
       kind: Deployment
 
-resources:
-  - trusted-ca-cfg.yaml
+configMapGenerator:
+  - name: trusted-ca
+    options:
+      labels:
+        "config.openshift.io/inject-trusted-cabundle": "true"
 
 namespace: integration-service
